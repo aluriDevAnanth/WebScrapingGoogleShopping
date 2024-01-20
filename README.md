@@ -1,6 +1,43 @@
 # WebScrapingGoogleShopping
-This repository contains a Python script that can scrape Google Shopping for any given search query and save the extracted data in Excel and JSON formats.
-The script uses a config file to specify the parameters for the web scraping, such as the search query, the number of results to scrape.
-The script uses the requests and BeautifulSoup libraries to fetch and parse the HTML pages from Google Shopping, and the openpyxl and json libraries to write the data to Excel and JSON files.
-The data that is scraped includes the product name, price, link, supplier, delivery. The script can be run from the command line or imported as a module in other Python programs.
-The script is useful for anyone who wants to collect and analyze data from Google Shopping for research or personal purposes.
+
+This Python script allows you to scrape product information from Google Shopping and save the data in both Excel and JSON formats. You can specify search options such as minimum and maximum price, shipping availability, and product sorting.
+
+## Prerequisites
+
+- Python 3.7 or above
+- Packages listed in the `requirements.txt`  file
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   gh repo clone devAnanthAluri/googleShoppingScraping
+   
+2. Navigate to the project directory:
+
+   ```bash
+   cd googleShoppingScraping-main
+
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   
+## Usage
+1. Open the config.ini file and configure the search options as needed. You can set the minimum price, maximum price, shipping availability, and product sorting.
+2. Install the required packages:
+
+   ```bash
+   python gs.py
+3. The script will scrape the product information from Google Shopping and save it in both Excel (.xlsx) and JSON (.json) formats. The files will be named based on the search query.
+   - Excel file: data_<search_query>.xlsx
+   - JSON file: data_<search_query>.json
+
+## Contributing
+Contributions to this project are welcome. If you encounter any issues or have suggestions for improvements, please create an issue or submit a pull request.
+
+## License
+
+Feel free to customize the content as per your requirements. Make sure to include the appropriate license file (e.g., `LICENSE`) in your repository and update the link in the `README.md` file accordingly.
+
+
